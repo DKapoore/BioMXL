@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bio MXL – Premium Bio-Stimulant for Superior Crop Performance</title>
+  <meta name="description" content="Bio MXL is a premium organic bio-stimulant that boosts crop yield, enhances soil health, and improves plant immunity naturally." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ====================== NAVBAR ====================== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">
+      <span class="logo-leaf">🌿</span>
+      <span>Bio<strong>MXL</strong></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#product" data-i18n="nav_product">Product</a></li>
+      <li><a href="#benefits" data-i18n="nav_benefits">Benefits</a></li>
+      <li><a href="#howto" data-i18n="nav_howto">How to Use</a></li>
+      <li><a href="#reviews" data-i18n="nav_reviews">Reviews</a></li>
+      <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+      <li><a href="#contact" class="nav-cta" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <div class="lang-switcher">
+      <button onclick="setLang('en')" class="lang-btn active" id="btn-en">EN</button>
+      <button onclick="setLang('hi')" class="lang-btn" id="btn-hi">हि</button>
+      <button onclick="setLang('mr')" class="lang-btn" id="btn-mr">म</button>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
+  </div>
+</nav>
+
+<!-- ====================== HERO ====================== -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge" data-i18n="hero_badge">🌱 Premium Bio-Stimulant</div>
+    <h1 class="hero-title" data-i18n="hero_title">Bio MXL</h1>
+    <p class="hero-tagline" data-i18n="hero_tagline">Nature's Intelligence. Farmer's Triumph.</p>
+    <ul class="hero-bullets">
+      <li data-i18n="hero_b1">✓ Boosts Yield up to 30%</li>
+      <li data-i18n="hero_b2">✓ Strengthens Root System</li>
+      <li data-i18n="hero_b3">✓ Improves Soil Microbial Activity</li>
+      <li data-i18n="hero_b4">✓ 100% Organic & Safe</li>
+    </ul>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn btn-primary" data-i18n="cta_contact">📞 Contact Now</a>
+      <a href="#video" class="btn btn-outline" data-i18n="cta_video">▶ Watch Video</a>
+      <a href="https://wa.me/919999999999" class="btn btn-whatsapp" data-i18n="cta_buy">🛒 Buy Now</a>
+    </div>
+  </div>
+  <div class="hero-product">
+    <div class="product-glow"></div>
+    <div class="product-img-wrap">
+      <img src="https://placehold.co/320x420/1a4a1a/ffffff?text=Bio+MXL\nProduct" alt="Bio MXL Product" class="product-img" id="heroProductImg" />
+      <div class="product-badge-ring">
+        <span>ORGANIC</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>↓</span>
+  </div>
+</section>
+
+<!-- ====================== VIDEO SECTION ====================== -->
+<section class="section video-section" id="video">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="vid_tag">🎬 Watch & Learn</span>
+      <h2 data-i18n="vid_title">See Bio MXL in Action</h2>
+      <p data-i18n="vid_sub">Real results from real farmers across India</p>
+    </div>
+    <div class="video-wrapper">
+      <div class="video-placeholder" id="videoContainer" onclick="loadVideo()">
+        <img src="https://placehold.co/960x540/0d2b0d/4caf50?text=▶+Play+Bio+MXL+Demo+Video" alt="Video Thumbnail" class="video-thumb" />
+        <div class="play-btn-overlay">
+          <div class="play-btn-circle">▶</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== PRODUCT INFO ====================== -->
+<section class="section product-info" id="product">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="prod_tag">🌿 About the Product</span>
+      <h2 data-i18n="prod_title">What is Bio MXL?</h2>
+      <p data-i18n="prod_sub">A scientifically formulated bio-stimulant crafted from nature's finest organic compounds</p>
+    </div>
+    <div class="product-grid">
+      <div class="product-text">
+        <p data-i18n="prod_desc">Bio MXL is a next-generation organic bio-stimulant developed using advanced fermentation technology and natural plant-growth promoting microorganisms. It enhances the natural metabolic processes of plants, leading to stronger roots, healthier soil, and dramatically improved crop yields.</p>
+        <p data-i18n="prod_desc2">Trusted by thousands of progressive farmers across Maharashtra, Madhya Pradesh, Gujarat, and Punjab, Bio MXL is the gold standard in organic crop nutrition.</p>
+        <div class="stats-row">
+          <div class="stat-card">
+            <span class="stat-num" data-target="30">0</span><span class="stat-unit">%</span>
+            <span class="stat-label" data-i18n="stat1">Yield Increase</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="50000">0</span><span class="stat-unit">+</span>
+            <span class="stat-label" data-i18n="stat2">Happy Farmers</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="12">0</span><span class="stat-unit">+</span>
+            <span class="stat-label" data-i18n="stat3">Years R&D</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="15">0</span><span class="stat-unit">+</span>
+            <span class="stat-label" data-i18n="stat4">Crops Tested</span>
+          </div>
+        </div>
+      </div>
+      <div class="feature-cards">
+        <div class="feat-card"><div class="feat-icon">🧬</div><h4 data-i18n="feat1_h">Microbial Boost</h4><p data-i18n="feat1_p">Enriches soil with beneficial microbes for long-lasting fertility</p></div>
+        <div class="feat-card"><div class="feat-icon">🌱</div><h4 data-i18n="feat2_h">Root Stimulation</h4><p data-i18n="feat2_p">Accelerates root development for better nutrient uptake</p></div>
+        <div class="feat-card"><div class="feat-icon">💧</div><h4 data-i18n="feat3_h">Water Efficiency</h4><p data-i18n="feat3_p">Improves soil water retention by up to 40%</p></div>
+        <div class="feat-card"><div class="feat-icon">🛡️</div><h4 data-i18n="feat4_h">Disease Resistance</h4><p data-i18n="feat4_p">Naturally boosts plant immunity against pathogens</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== COMPOSITION ====================== -->
+<section class="section composition" id="composition">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="comp_tag">⚗️ Composition</span>
+      <h2 data-i18n="comp_title">Ingredients & Technical Composition</h2>
+      <p data-i18n="comp_sub">Formulated with the finest organic and scientifically validated components</p>
+    </div>
+    <div class="comp-layout">
+      <div class="comp-visual">
+        <div class="comp-circle">
+          <div class="comp-inner">
+            <span class="comp-icon">🌿</span>
+            <span data-i18n="comp_label">Bio MXL</span>
+            <span data-i18n="comp_label2">Formula</span>
+          </div>
+          <div class="comp-ring r1"></div>
+          <div class="comp-ring r2"></div>
+        </div>
+        <div class="comp-tags">
+          <span class="comp-tag ct1">Humic Acid</span>
+          <span class="comp-tag ct2">Fulvic Acid</span>
+          <span class="comp-tag ct3">Amino Acids</span>
+          <span class="comp-tag ct4">Seaweed Extract</span>
+          <span class="comp-tag ct5">Mycorrhizae</span>
+          <span class="comp-tag ct6">Trichoderma</span>
+        </div>
+      </div>
+      <div class="comp-table-wrap">
+        <table class="comp-table">
+          <thead>
+            <tr><th data-i18n="ct_h1">Ingredient</th><th data-i18n="ct_h2">Source</th><th data-i18n="ct_h3">Content</th><th data-i18n="ct_h4">Function</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Humic Acid</td><td>Leonardite</td><td>12%</td><td data-i18n="ctf1">Soil conditioner</td></tr>
+            <tr><td>Fulvic Acid</td><td>Organic matter</td><td>6%</td><td data-i18n="ctf2">Nutrient transporter</td></tr>
+            <tr><td>Seaweed Extract</td><td>Ascophyllum nodosum</td><td>8%</td><td data-i18n="ctf3">Growth hormone</td></tr>
+            <tr><td>Amino Acids</td><td>Plant hydrolysate</td><td>10%</td><td data-i18n="ctf4">Protein builder</td></tr>
+            <tr><td>Mycorrhizae</td><td>Natural fungi</td><td>5 × 10⁶/g</td><td data-i18n="ctf5">Root expansion</td></tr>
+            <tr><td>Trichoderma</td><td>Beneficial fungi</td><td>2 × 10⁶/g</td><td data-i18n="ctf6">Disease control</td></tr>
+            <tr><td>Zinc (chelated)</td><td>EDTA chelate</td><td>0.5%</td><td data-i18n="ctf7">Enzyme activator</td></tr>
+            <tr><td>Boron</td><td>Sodium borate</td><td>0.2%</td><td data-i18n="ctf8">Pollination support</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== BENEFITS ====================== -->
+<section class="section benefits" id="benefits">
+  <div class="container">
+    <div class="section-header light">
+      <span class="section-tag" data-i18n="ben_tag">🏆 Why Bio MXL</span>
+      <h2 data-i18n="ben_title">Proven Benefits for Your Farm</h2>
+      <p data-i18n="ben_sub">Experience a complete transformation in crop health and productivity</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card" data-delay="0"><div class="ben-icon">🌿</div><h4 data-i18n="b1h">Better Root Growth</h4><p data-i18n="b1p">Stimulates lateral root formation for 2× deeper root penetration and superior nutrient access</p></div>
+      <div class="benefit-card" data-delay="100"><div class="ben-icon">🪱</div><h4 data-i18n="b2h">Soil Health</h4><p data-i18n="b2p">Revives soil biology and increases organic carbon content for long-term farm health</p></div>
+      <div class="benefit-card" data-delay="200"><div class="ben-icon">💧</div><h4 data-i18n="b3h">Water Retention</h4><p data-i18n="b3p">Reduces irrigation frequency by up to 30% with improved soil moisture holding capacity</p></div>
+      <div class="benefit-card" data-delay="300"><div class="ben-icon">📈</div><h4 data-i18n="b4h">Yield Increase</h4><p data-i18n="b4p">Documented 20–35% yield improvement across wheat, cotton, soybean, and vegetable crops</p></div>
+      <div class="benefit-card" data-delay="400"><div class="ben-icon">⚡</div><h4 data-i18n="b5h">Fertilizer Efficiency</h4><p data-i18n="b5p">Enhances NPK absorption so farmers spend 25% less on chemical inputs</p></div>
+      <div class="benefit-card" data-delay="500"><div class="ben-icon">💪</div><h4 data-i18n="b6h">Plant Strength</h4><p data-i18n="b6p">Thicker stems, glossier leaves, and stronger cell walls for stress-resistant crops</p></div>
+      <div class="benefit-card" data-delay="600"><div class="ben-icon">🦠</div><h4 data-i18n="b7h">Microbial Activity</h4><p data-i18n="b7p">Multiplies beneficial soil microbes 10× for a living, breathing, productive farm</p></div>
+      <div class="benefit-card" data-delay="700"><div class="ben-icon">🌾</div><h4 data-i18n="b8h">Crop Performance</h4><p data-i18n="b8p">Better grain filling, fruit size, colour, and shelf life across all major crop types</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== HOW TO USE ====================== -->
+<section class="section howto" id="howto">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="how_tag">📋 Application Guide</span>
+      <h2 data-i18n="how_title">How to Use Bio MXL</h2>
+      <p data-i18n="how_sub">Simple, precise, and highly effective application methods for maximum results</p>
+    </div>
+    <div class="dosage-cards">
+      <div class="dose-card"><div class="dose-num">250</div><div class="dose-unit" data-i18n="dose_ml">ml / acre</div><p data-i18n="dose_drip">Drip Irrigation</p></div>
+      <div class="dose-card highlight"><div class="dose-num">500</div><div class="dose-unit" data-i18n="dose_ml">ml / acre</div><p data-i18n="dose_flood">Flood Irrigation</p></div>
+      <div class="dose-card"><div class="dose-num">3</div><div class="dose-unit" data-i18n="dose_ml2">ml / L water</div><p data-i18n="dose_spray">Foliar Spray</p></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item left">
+        <div class="tl-dot">1</div>
+        <div class="tl-card">
+          <h4 data-i18n="tl1h">Soil Preparation</h4>
+          <p data-i18n="tl1p">Mix 500ml Bio MXL with 50L water. Apply evenly across one acre before sowing or transplanting. Best done 3–5 days before seeding.</p>
+        </div>
+      </div>
+      <div class="tl-item right">
+        <div class="tl-dot">2</div>
+        <div class="tl-card">
+          <h4 data-i18n="tl2h">Seed Treatment</h4>
+          <p data-i18n="tl2p">Soak seeds in 3ml Bio MXL per litre of water for 30 minutes before sowing. This gives seedlings an early-life advantage from day one.</p>
+        </div>
+      </div>
+      <div class="tl-item left">
+        <div class="tl-dot">3</div>
+        <div class="tl-card">
+          <h4 data-i18n="tl3h">Vegetative Stage</h4>
+          <p data-i18n="tl3p">Apply 250ml per acre via drip or 500ml via flood irrigation at 20–25 days after germination for accelerated vegetative growth.</p>
+        </div>
+      </div>
+      <div class="tl-item right">
+        <div class="tl-dot">4</div>
+        <div class="tl-card">
+          <h4 data-i18n="tl4h">Flowering & Fruiting</h4>
+          <p data-i18n="tl4p">Foliar spray of 3ml per litre at the flowering stage significantly increases fruit set, grain filling, and final yield.</p>
+        </div>
+      </div>
+    </div>
+    <div class="before-after">
+      <div class="ba-card before">
+        <div class="ba-label" data-i18n="ba_before">Without Bio MXL</div>
+        <ul>
+          <li data-i18n="ba1a">Weak, shallow roots</li>
+          <li data-i18n="ba2a">Low nutrient absorption</li>
+          <li data-i18n="ba3a">High irrigation demand</li>
+          <li data-i18n="ba4a">Poor disease resistance</li>
+        </ul>
+      </div>
+      <div class="ba-divider">vs</div>
+      <div class="ba-card after">
+        <div class="ba-label" data-i18n="ba_after">With Bio MXL ✓</div>
+        <ul>
+          <li data-i18n="ba1b">Deep, branched root system</li>
+          <li data-i18n="ba2b">2× NPK uptake efficiency</li>
+          <li data-i18n="ba3b">30% less water needed</li>
+          <li data-i18n="ba4b">Natural immunity activated</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== REVIEWS ====================== -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <div class="section-header light">
+      <span class="section-tag" data-i18n="rev_tag">⭐ Farmer Reviews</span>
+      <h2 data-i18n="rev_title">What Farmers Say</h2>
+      <p data-i18n="rev_sub">Real voices from the fields of India</p>
+    </div>
+    <div class="slider-wrap">
+      <div class="slider" id="reviewSlider">
+        <!-- Reviews injected by JS -->
+      </div>
+      <button class="slider-btn prev" onclick="slideReview(-1)">‹</button>
+      <button class="slider-btn next" onclick="slideReview(1)">›</button>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== GOOGLE REVIEWS ====================== -->
+<section class="section google-reviews" id="greviews">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">⭐ Google Reviews</span>
+      <h2 data-i18n="gr_title">Rated Highly on Google</h2>
+    </div>
+    <div class="gr-summary">
+      <div class="gr-score">
+        <span class="gr-num">4.8</span>
+        <div class="gr-stars">★★★★★</div>
+        <span data-i18n="gr_based">Based on 340 reviews</span>
+      </div>
+      <div class="gr-bars">
+        <div class="gr-bar-row"><span>5★</span><div class="gr-bar"><div class="gr-fill" style="width:78%"></div></div><span>78%</span></div>
+        <div class="gr-bar-row"><span>4★</span><div class="gr-bar"><div class="gr-fill" style="width:15%"></div></div><span>15%</span></div>
+        <div class="gr-bar-row"><span>3★</span><div class="gr-bar"><div class="gr-fill" style="width:5%"></div></div><span>5%</span></div>
+        <div class="gr-bar-row"><span>2★</span><div class="gr-bar"><div class="gr-fill" style="width:1%"></div></div><span>1%</span></div>
+        <div class="gr-bar-row"><span>1★</span><div class="gr-bar"><div class="gr-fill" style="width:1%"></div></div><span>1%</span></div>
+      </div>
+    </div>
+    <div class="gr-cards" id="grCards"></div>
+    <div class="gr-actions">
+      <a href="https://g.page/r/biomxl" target="_blank" class="btn btn-outline" data-i18n="gr_write">✍ Write a Review</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== GALLERY ====================== -->
+<section class="section gallery-section" id="gallery">
+  <div class="container">
+    <div class="section-header light">
+      <span class="section-tag" data-i18n="gal_tag">📸 Gallery</span>
+      <h2 data-i18n="gal_title">Results in the Field</h2>
+      <p data-i18n="gal_sub">Visual proof from farms across India</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lb-close" onclick="closeLightbox()">✕</button>
+  <button class="lb-prev" onclick="lbNav(-1,event)">‹</button>
+  <img class="lb-img" id="lbImg" src="" alt="Gallery" />
+  <button class="lb-next" onclick="lbNav(1,event)">›</button>
+</div>
+
+<!-- ====================== CERTIFICATIONS ====================== -->
+<section class="section certifications" id="certifications">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="cert_tag">🏅 Trust & Quality</span>
+      <h2 data-i18n="cert_title">Certifications & Approvals</h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card"><div class="cert-icon">🏅</div><h4>ISO 9001:2015</h4><p data-i18n="cert1">Quality Management System Certified</p></div>
+      <div class="cert-card"><div class="cert-icon">🌿</div><h4>NPOP Organic</h4><p data-i18n="cert2">National Programme for Organic Production</p></div>
+      <div class="cert-card"><div class="cert-icon">🔬</div><h4>CIB & RC</h4><p data-i18n="cert3">Central Insecticides Board Registered</p></div>
+      <div class="cert-card"><div class="cert-icon">✅</div><h4>FCO Approved</h4><p data-i18n="cert4">Fertilizer Control Order Compliant</p></div>
+      <div class="cert-card"><div class="cert-icon">🌍</div><h4>USDA Organic</h4><p data-i18n="cert5">United States Department of Agriculture</p></div>
+      <div class="cert-card"><div class="cert-icon">⚗️</div><h4>Lab Tested</h4><p data-i18n="cert6">Third Party Laboratory Verified</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== FAQ ====================== -->
+<section class="section faq-section" id="faq">
+  <div class="container">
+    <div class="section-header light">
+      <span class="section-tag" data-i18n="faq_tag">❓ FAQ</span>
+      <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ====================== CONTACT ====================== -->
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="con_tag">📬 Get in Touch</span>
+      <h2 data-i18n="con_title">Contact Us</h2>
+      <p data-i18n="con_sub">Our agronomists are ready to help you get the most from Bio MXL</p>
+    </div>
+    <div class="contact-layout">
+      <div class="contact-info">
+        <div class="ci-item"><span>📞</span><div><strong data-i18n="ci_phone">Phone / WhatsApp</strong><p id="contactPhone">+91 99999 99999</p></div></div>
+        <div class="ci-item"><span>📧</span><div><strong data-i18n="ci_email">Email</strong><p id="contactEmail">info@biomxl.com</p></div></div>
+        <div class="ci-item"><span>📍</span><div><strong data-i18n="ci_addr">Address</strong><p data-i18n="ci_addrval">Bio MXL Agro Pvt Ltd, Pune, Maharashtra – 411001</p></div></div>
+        <div class="ci-item"><span>🕐</span><div><strong data-i18n="ci_hours">Business Hours</strong><p data-i18n="ci_hrsval">Mon–Sat: 9:00 AM – 6:00 PM</p></div></div>
+      </div>
+      <form class="contact-form" id="contactForm" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label data-i18n="cf_name">Full Name *</label>
+            <input type="text" id="cf_name" placeholder="Ramesh Patil" required />
+          </div>
+          <div class="form-group">
+            <label data-i18n="cf_mobile">Mobile *</label>
+            <input type="tel" id="cf_mobile" placeholder="+91 98765 43210" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label data-i18n="cf_email">Email</label>
+            <input type="email" id="cf_email" placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label data-i18n="cf_state">State *</label>
+            <select id="cf_state" required>
+              <option value="">Select State</option>
+              <option>Maharashtra</option><option>Gujarat</option><option>Madhya Pradesh</option>
+              <option>Rajasthan</option><option>Punjab</option><option>Uttar Pradesh</option>
+              <option>Karnataka</option><option>Andhra Pradesh</option><option>Telangana</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group full">
+          <label data-i18n="cf_msg">Message</label>
+          <textarea id="cf_msg" rows="4" placeholder="Tell us about your crop and requirement..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" data-i18n="cf_submit">Send Message 📨</button>
+        <div class="form-success" id="formSuccess">✅ Thank you! We'll contact you within 24 hours.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== FOOTER ====================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="foot-logo">🌿 Bio<strong>MXL</strong></div>
+        <p data-i18n="foot_desc">Premium organic bio-stimulant trusted by progressive farmers across India.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn">f</a>
+          <a href="#" class="social-btn">in</a>
+          <a href="#" class="social-btn">yt</a>
+          <a href="#" class="social-btn">ig</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="foot_quick">Quick Links</h5>
+        <ul>
+          <li><a href="#product" data-i18n="nav_product">Product</a></li>
+          <li><a href="#benefits" data-i18n="nav_benefits">Benefits</a></li>
+          <li><a href="#howto" data-i18n="nav_howto">How to Use</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+          <li><a href="admin.html" data-i18n="foot_admin">Admin Panel</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="foot_crops">Suitable Crops</h5>
+        <ul>
+          <li>Wheat / Gehu</li>
+          <li>Cotton / Kapas</li>
+          <li>Soybean / Soyabean</li>
+          <li>Sugarcane / Ganna</li>
+          <li>Vegetables / Sabzi</li>
+          <li>Grapes / Angur</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="foot_contact">Contact</h5>
+        <p>📞 +91 99999 99999</p>
+        <p>📧 info@biomxl.com</p>
+        <p>📍 Pune, Maharashtra</p>
+        <p data-i18n="foot_dist">Distributor Enquiry Welcome</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Bio MXL Agro Pvt Ltd. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ====================== FLOATING WHATSAPP ====================== -->
+<a href="https://wa.me/919999999999?text=Hello!%20I%20am%20interested%20in%20Bio%20MXL" target="_blank" class="whatsapp-float" id="waFloat" title="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" width="32" height="32" fill="white"><path d="M16 0C7.164 0 0 7.163 0 16c0 2.82.736 5.461 2.026 7.75L0 32l8.49-2.003A15.924 15.924 0 0016 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm7.73 22.617c-.326.918-1.9 1.755-2.611 1.858-.677.096-1.527.135-2.462-.155-.568-.175-1.297-.408-2.227-.8-3.924-1.694-6.48-5.6-6.678-5.862-.194-.262-1.582-2.105-1.582-4.013 0-1.908.997-2.846 1.35-3.232.353-.387.77-.484 1.027-.484.257 0 .514.002.74.013.237.012.556-.09.87.664.326.778 1.106 2.686 1.204 2.881.097.194.162.42.032.678-.13.257-.194.42-.388.645-.194.226-.409.505-.583.678-.194.194-.396.404-.17.793.226.387.1.004 1.54 2.163 1.058 1.486 1.96 1.946 2.349 2.14.388.194.614.162.84-.097.226-.26.97-1.13 1.228-1.517.258-.387.516-.322.87-.194.354.13 2.25 1.062 2.637 1.256.388.194.645.29.742.452.096.162.096.937-.23 1.855z"/></svg>
+  <span class="wa-label">WhatsApp</span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
