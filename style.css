@@ -25,6 +25,8 @@
   --font-heading: 'Playfair Display', serif;
   --font-body: 'DM Sans', sans-serif;
   --font-ui: 'Poppins', sans-serif;
+  /* Admin-overridable colours — set as CSS vars so JS can update them */
+  --orange-light: #f39c12;
 }
 
 /* ===== RESET & BASE ===== */
@@ -664,6 +666,7 @@ ul { list-style: none; }
 }
 .gallery-item:hover .gallery-overlay { opacity: 1; }
 .gallery-item:nth-child(5) { grid-column: span 2; aspect-ratio: 2/1; }
+.gallery-item.wide { grid-column: span 2; aspect-ratio: 2/1; }
 
 /* Lightbox */
 .lightbox {
