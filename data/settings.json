@@ -1,0 +1,56 @@
+{
+  "biomxl_wa_show": "0",
+  "biomxl_wa_color": "#25d366",
+  "biomxl_wa_label": "WhatsApp",
+  "biomxl_wa_icon": "",
+  "biomxl_theme": {
+    "c_green": "#2d7a2d",
+    "c_dark": "#1a4a1a",
+    "c_light": "#4caf50",
+    "c_pale": "#e8f5e9",
+    "c_orange": "#e67e22",
+    "c_ohover": "#f39c12",
+    "c_text": "#1e2d1e",
+    "c_muted": "#5a7a5a",
+    "c_bg": "#fafdf8",
+    "c_ov1": "#0f280f",
+    "c_ov2": "#1a4a1a",
+    "hero_bg": "",
+    "ov_op": "0.86"
+  },
+  "biomxl_fonts": {
+    "head": "Playfair Display",
+    "body_f": "DM Sans",
+    "fs_hero": "90",
+    "fs_h2": "42",
+    "fs_body": "16",
+    "fs_card": "14"
+  },
+  "biomxl_brand": {
+    "brand_name": "",
+    "brand_tagline": "",
+    "company_name": "",
+    "copy_year": "",
+    "soc_fb": "",
+    "soc_yt": "",
+    "soc_ig": "",
+    "soc_li": ""
+  },
+  "biomxl_phone": "",
+  "biomxl_wa": "",
+  "biomxl_email": "",
+  "biomxl_hours": "",
+  "biomxl_addr": "",
+  "biomxl_wmsg": "",
+  "biomxl_langs": {},
+  "biomxl_float_btns": [
+    {
+      "label": "Call Now",
+      "link": "ddadasdad",
+      "color": "#1565c0",
+      "emoji": "📞",
+      "iconUrl": ""
+    }
+  ],
+  "biomxl_last_published": "2026-07-13T07:05:45.861Z"
+}
